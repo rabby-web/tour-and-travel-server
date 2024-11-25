@@ -36,3 +36,18 @@ The `Tour` model represents the tours available for users to book.
 | `startDate`  | Date    | Start date of the tour              |
 | `tourLocation`| String | Location of the tour               |
 
+### Review Model
+
+The `Review` model allows users to review and rate specific tours.
+
+| Field     | Type   | Description                                   |
+| --------- | ------ | --------------------------------------------- |
+| `review`  | String | Text review written by the user               |
+| `rating`  | Number | Rating given to the tour (e.g., from 1 to 5)  |
+| `tour`    | ObjectId | Reference to the associated `Tour` model   |
+| `user`    | ObjectId | Reference to the `User` who wrote the review|
+
+## API Endpoints
+
+The application includes endpoints for performing CRUD operations on `User`, `Tour`, and `Review` resources.
+

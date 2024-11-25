@@ -23,3 +23,16 @@ The `User` model represents the users in the application. Users can have differe
 
 ### Tour Model
 
+The `Tour` model represents the tours available for users to book.
+
+| Field        | Type    | Description                          |
+| ------------ | ------- | ------------------------------------ |
+| `name`       | String  | Name of the tour                    |
+| `duration`   | Number  | Duration of the tour (in days)      |
+| `rating`     | Number  | Average rating of the tour          |
+| `price`      | Number  | Price of the tour                   |
+| `coverImage` | String  | URL for the tour's cover image      |
+| `image`      | Array   | Array of URLs for tour images       |
+| `startDate`  | Date    | Start date of the tour              |
+| `tourLocation`| String | Location of the tour               |
+

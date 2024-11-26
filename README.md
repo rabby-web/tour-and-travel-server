@@ -51,3 +51,66 @@ The `Review` model allows users to review and rate specific tours.
 
 The application includes endpoints for performing CRUD operations on `User`, `Tour`, and `Review` resources.
 
+### Users
+
+- **Create User**: `POST /api/users`
+- **Get All Users**: `GET /api/users`
+- **Get Single User**: `GET /api/users/:id`
+- **Update User**: `PUT /api/users/:id`
+- **Delete User**: `DELETE /api/users/:id`
+
+### Tours
+
+- **Create Tour**: `POST /api/tours`
+- **Get All Tours**: `GET /api/tours`
+- **Get Single Tour**: `GET /api/tours/:id`
+- **Update Tour**: `PUT /api/tours/:id`
+- **Delete Tour**: `DELETE /api/tours/:id`
+
+### Reviews
+
+- **Create Review**: `POST /api/reviews`
+- **Get All Reviews**: `GET /api/reviews`
+- **Get Single Review**: `GET /api/reviews/:id`
+- **Update Review**: `PUT /api/reviews/:id`
+- **Delete Review**: `DELETE /api/reviews/:id`
+
+## Relationships
+
+- A **Review** references both a **Tour** and a **User** using Mongoose `ObjectId` references, establishing a relationship where each review is linked to a specific user and a specific tour.
+  
+## Project Setup
+
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Configure environment variables**:
+   Create a `.env` file and specify the necessary variables, like `DATABASE_URL` for MongoDB and `PORT`.
+
+4. **Start the server**:
+   ```bash
+   npm start
+   ```
+
+## Technologies Used
+
+- **Node.js**: JavaScript runtime for building the server.
+- **Express.js**: Web framework for building the API.
+- **MongoDB**: NoSQL database for data storage.
+- **Mongoose**: ODM library for MongoDB.
+- **TypeScript (optional)**: Adds type safety and enhanced developer experience.
+
+## License
+
+This project is licensed under the MIT License.
+
+--- 
+
+This README provides a detailed overview of each model, endpoint, and the relationships between the data structures in the Tour and Travel server application.
